@@ -26,7 +26,7 @@ Instead of relying on generic wordlists, WhisperNet builds its list from details
   - [Configuration](#configuration)
 - [Usage](#usage)
 - [Sample Output](#sample-output)
-- [Pull Requests Welcome](#pull-requests-welcome)
+- [Contribution](#Contribution)
 - [License](#license)
 
 ---
@@ -142,7 +142,7 @@ babyjohn!
 
 ---
 
-## Pull Requests Welcome
+## Contribution
 
 Have an idea to improve WhisperNet? Contribute by submitting a Pull Request:
 
@@ -170,6 +170,7 @@ Have an idea to improve WhisperNet? Contribute by submitting a Pull Request:
     
 
 ---
+> 💡 Got suggestions or feature ideas? Open an issue or submit a PR — your enhancements are always appreciated!
 
 ## License
 
