@@ -67,7 +67,7 @@ Follow these instructions to get a local copy up and running.
 
 #### 1. Clone the repository:
 ```bash
-git clone https://github.com/your_username/WhisperNet.git
+git clone https://github.com/AyushParkara/WhisperNet.git
 ````
 
 #### 2. Navigate to the project directory:
