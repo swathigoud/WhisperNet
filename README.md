@@ -173,7 +173,7 @@ Have an idea to improve WhisperNet? Contribute by submitting a Pull Request:
 
 ## License
 
-This project is licensed under the [MIT License](https://chatgpt.com/c/LICENSE).
+This project is licensed under the [GNU License](LICENSE).
 
 ---
 
